@@ -1,0 +1,51 @@
+[38;5;46m make -j 3 -C ../libft [31m
+make[1]: Nothing to be done for `all'.
+[38;5;46m make bonus -j 3 -C ../libft
+[38;5;46m cp ../libft/libft.a assets/ [31m
+[38;5;46m➤ [38;5;47m clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_lstadd_back.o assets/tmp/ft_lstadd_front.o assets/tmp/ft_lstclear.o assets/tmp/ft_lstdelone.o assets/tmp/ft_lstiter.o assets/tmp/ft_lstlast.o assets/tmp/ft_lstmap.o assets/tmp/ft_lstnew.o assets/tmp/ft_lstsize.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so [31m
+[38;5;46;m[  Linking #0  ][0m
+[38;5;46m➤ [38;5;47m clang -Werror -Wall -Wextra -O2 -funroll-loops -lncurses -o assets/libtests obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o[31m
+[38;5;93mRUNNING BENCH:
+[38;5;82m                               STARTING BENCH MODE
+   _.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._
+.-'---      - ---     --     ---   -----   - --       ----  ----   -     ---`-.
+ )  pts   time used by your libft      VS     system's libc             pts  ( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_memset[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;220m [0m|[38;5;220m 75%      [48;5;220m               [0m|     [38;5;208mfat[0m     |[48;5;27m     [0m               [38;5;27m 25% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m 95%  [48;5;197m                   [0m|    [38;5;220mmedium[0m   |[48;5;27m [0m                   [38;5;27m  5% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;118m [0m|[38;5;118m 60%         [48;5;118m            [0m|    [38;5;191msmall[0m    |[48;5;44m        [0m            [38;5;44m 40% [0m|[38;5;44m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|   [38;5;82mft_bzero[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;220m [0m|[38;5;220m 78%     [48;5;220m                [0m|     [38;5;208mfat[0m     |[48;5;27m    [0m                [38;5;27m 22% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;202m [0m|[38;5;202m 90%   [48;5;202m                  [0m|    [38;5;220mmedium[0m   |[48;5;27m  [0m                  [38;5;27m 10% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;44m [0m|[38;5;44m 50%           [48;5;44m          [0m|    [38;5;191msmall[0m    |[48;5;44m          [0m          [38;5;44m 50% [0m|[38;5;44m [0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_memcpy[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 93%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  7% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m100% [48;5;197m                    [0m|    [38;5;220mmedium[0m   |[48;5;27m[0m                    [38;5;27m  0% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 97%  [48;5;197m                   [0m|    [38;5;191msmall[0m    |[48;5;27m [0m                   [38;5;27m  3% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_memmove[0m |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 93%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  7% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m100% [48;5;197m                    [0m|    [38;5;220mmedium[0m   |[48;5;27m[0m                    [38;5;27m  0% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 98% [48;5;197m                    [0m|    [38;5;191msmall[0m    |[48;5;27m[0m                    [38;5;27m  2% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_memchr[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 97%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  3% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m 99% [48;5;197m                    [0m|    [38;5;220mmedium[0m   |[48;5;27m[0m                    [38;5;27m  1% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 98% [48;5;197m                    [0m|    [38;5;191msmall[0m    |[48;5;27m[0m                    [38;5;27m  2% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_memcmp[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 95%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  5% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m 98% [48;5;197m                    [0m|    [38;5;220mmedium[0m   |[48;5;27m[0m                    [38;5;27m  2% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 97%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  3% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_strlen[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 97%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  3% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m 99% [48;5;197m                    [0m|    [38;5;220mmedium[0m   |[48;5;27m[0m                    [38;5;27m  1% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 98% [48;5;197m                    [0m|    [38;5;191msmall[0m    |[48;5;27m[0m                    [38;5;27m  2% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_strchr[0m  |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 96%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  4% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;197m [0m|[38;5;197m 99% [48;5;197m                    [0m|    [38;5;220mmedium[0m   |[48;5;27m[0m                    [38;5;27m  1% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 98% [48;5;197m                    [0m|    [38;5;191msmall[0m    |[48;5;27m[0m                    [38;5;27m  2% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_strrchr[0m |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;202m [0m|[38;5;202m 91%   [48;5;202m                  [0m|     [38;5;208mfat[0m     |[48;5;27m  [0m                  [38;5;27m  9% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m(   [0m|[38;5;202m [0m|[38;5;202m 91%   [48;5;202m                  [0m|     [38;5;208mfat[0m     |[48;5;27m  [0m                  [38;5;27m  9% [0m|[38;5;27m●[0m|  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;202m [0m|[38;5;202m 85%    [48;5;202m                 [0m|    [38;5;191msmall[0m    |[48;5;27m   [0m                 [38;5;27m 15% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m[38;5;82m( [0m  | | ========================|  [38;5;82mft_strncmp[0m |======================== | |  [38;5;82m )
+[0m[38;5;82m )  [0m|[38;5;197m [0m|[38;5;197m 94%  [48;5;197m                   [0m|     [38;5;208mfat[0m     |[48;5;27m [0m                   [38;5;27m  6% [0m|[38;5;27m●[0m|  [38;5;82m( 
+[0m
